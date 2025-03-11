@@ -16,3 +16,4 @@ A service provided by Confluent that stores Avro schemas and ensures the compati
 
 Docker:
 The Kafka broker, Zookeeper, Schema Registry, and both Spring Boot applications (producer and consumer) are containerized using Docker to ensure easy deployment and environment parity across development, staging, and production.
+  - Command to bring up Docker containers: docker-compose up -d
