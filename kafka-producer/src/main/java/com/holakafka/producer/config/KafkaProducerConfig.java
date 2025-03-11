@@ -24,6 +24,8 @@ public class KafkaProducerConfig {
 	public Map<String, Object> producerConfig(){
 		Map<String, Object> properties = new HashMap<String, Object>();
 		properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+		properties.put(ProducerConfig.ACKS_CONFIG, "all"); 
+		properties.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true); // Exactly one copy of each message
 		properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class);
 		properties.put("schema.registry.url", "http://127.0.0.1:8081");
