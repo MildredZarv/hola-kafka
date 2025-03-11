@@ -1,0 +1,8 @@
+com\holakafka\consumer\model\RequestPayload.class
+com\holakafka\consumer\KafkaConsumerApplication.class
+com\holakafka\consumer\listener\KafkaListeners.class
+com\holakafka\consumer\dto\User$Builder.class
+com\holakafka\consumer\dto\User.class
+com\holakafka\consumer\model\User.class
+com\holakafka\consumer\config\KafkaConsumerConfig.class
+com\holakafka\consumer\util\CustomRequestPayloadDeserializer.class

@@ -1,0 +1,17 @@
+server:
+   port: 8082 
+spring:
+   application:
+      name: kafka-producer
+   kafka:
+      producer:
+         bootstrap-servers: localhost:9092
+         topic:
+            name: hola-kafka-user-topic
+   # Alternative Kafka configuration, same as KafkaProducerConfig      
+   #      keySerializer: "org.apache.kafka.common.serialization.StringSerializer"
+   #      valueSerializer: "io.confluent.kafka.serializers.KafkaAvroSerializer"
+   #      properties:
+   #      schema:
+   #         registry:
+   #            url: "http://127.0.0.1:8081"
